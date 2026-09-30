@@ -1,0 +1,79 @@
+// ===== PROYECTOS =====
+.ficha {
+  --color-foco: var(--color-primario);
+  --bs-modal-border-radius: #{$radio};
+  --bs-modal-inner-border-radius: #{$radio};
+
+  color: var(--color-texto);
+}
+
+.ficha .btn-close {
+  border-radius: $radio;
+}
+
+.ficha .modal-body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primario) var(--color-primario-suave);
+}
+
+.ficha__titulo {
+  font-size: 1.125rem;
+  color: var(--color-texto);
+}
+
+.ficha__meta {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-texto-suave);
+}
+
+.ficha__texto {
+  margin-bottom: 1.5rem;
+  color: var(--color-texto-suave);
+}
+
+.ficha__subtitulo {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.ficha__lista {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.ficha__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.ficha__icono {
+  color: var(--color-primario);
+}
+
+.ficha__tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.ficha__tecnologia {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+}
+
+.ficha__acciones .boton {
+  flex: 1 1 auto;
+
+  @include tablet {
+    flex: 0 0 auto;
+  }
+}

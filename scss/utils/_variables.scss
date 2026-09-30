@@ -1,0 +1,84 @@
+// ===== VARIABLES =====
+$color-fondo: #FFFFFF;
+$color-superficie: #F4F4F8;
+$color-texto: #111118;
+$color-texto-suave: #52525B;
+
+$color-primario: #512BD4;
+$color-secundario: #1D4ED8;
+
+$color-primario-hover: #3F1FB0;
+$color-primario-claro: #8B6CFF;
+$color-primario-suave: #E9E5FB;
+
+$color-borde: #E2E2EA;
+$color-borde-campo: #D4D4DC;
+$color-texto-oscuro-suave: #A1A1AA;
+$color-error: #B42318;
+$color-exito: #15803D;
+$color-linkedin: #0A66C2;
+
+$color-foco: $color-primario;
+
+$color-superficie-oscura: #1C1C26;
+$color-borde-oscuro: rgba($color-fondo, 0.08);
+$color-borde-oscuro-hover: rgba($color-fondo, 0.16);
+
+$color-linea-oscura: rgba($color-fondo, 0.2);
+$color-borde-navbar: $color-borde-oscuro;
+$color-halo-oscuro: rgba($color-primario-claro, 0.3);
+$sombra-tarjeta-oscura: 0 12px 28px rgba(0, 0, 0, 0.5);
+
+$bp-tablet: 768px;
+$bp-escritorio: 1200px;
+
+$radio: 0;
+
+$alto-navbar: 56px;
+$alto-navbar-escritorio: 72px;
+
+$lado-mosaico: 76px;
+$lado-mosaico-tablet: 100px;
+
+$fuente-mono: ui-monospace, Consolas, monospace;
+
+:root {
+  --color-fondo: #{$color-fondo};
+  --color-superficie: #{$color-superficie};
+  --color-texto: #{$color-texto};
+  --color-texto-suave: #{$color-texto-suave};
+
+  --color-primario: #{$color-primario};
+  --color-secundario: #{$color-secundario};
+
+  --color-primario-hover: #{$color-primario-hover};
+  --color-primario-claro: #{$color-primario-claro};
+  --color-primario-suave: #{$color-primario-suave};
+
+  --color-borde: #{$color-borde};
+  --color-borde-campo: #{$color-borde-campo};
+  --color-texto-oscuro-suave: #{$color-texto-oscuro-suave};
+  --color-error: #{$color-error};
+  --color-exito: #{$color-exito};
+  --color-linkedin: #{$color-linkedin};
+
+  --color-foco: #{$color-foco};
+
+  --color-superficie-oscura: #{$color-superficie-oscura};
+  --color-borde-oscuro: #{$color-borde-oscuro};
+  --color-borde-oscuro-hover: #{$color-borde-oscuro-hover};
+
+  --color-linea-oscura: #{$color-linea-oscura};
+  --color-borde-navbar: #{$color-borde-navbar};
+  --color-halo-oscuro: #{$color-halo-oscuro};
+  --sombra-tarjeta-oscura: #{$sombra-tarjeta-oscura};
+
+  --alto-navbar: #{$alto-navbar};
+  --fuente-mono: #{$fuente-mono};
+}
+
+@media (min-width: $bp-escritorio) {
+  :root {
+    --alto-navbar: #{$alto-navbar-escritorio};
+  }
+}

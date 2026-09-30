@@ -1,0 +1,1579 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martín Fernández | Desarrollador de Software .NET</title>
+    <meta
+      name="description"
+      content="Portfolio de Martín Fernández, desarrollador de software .NET. Proyectos en C#, .NET y bases de datos. Mirá mi experiencia y contactame."
+    />
+    <meta
+      name="keywords"
+      content="desarrollador .NET, C#, desarrollo de software, SQL Server, portfolio, Martín Fernández"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="img/favicon/favicon.ico" sizes="any" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#512BD4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#inicio">Martín Fernández</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menu-principal"
+            aria-controls="menu-principal"
+            aria-label="Abrir menú"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            id="menu-principal"
+            tabindex="-1"
+            aria-labelledby="titulo-menu"
+            data-bs-theme="dark"
+          >
+            <div class="offcanvas-header">
+              <p class="offcanvas-title" id="titulo-menu">Martín Fernández</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Cerrar menú"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#inicio"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#certificados">Certificados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#redes">Redes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+              <div class="panel-pie">
+                <div class="panel-pie__cv">
+                  <a
+                    class="boton boton--contorno boton--claro boton--ancho"
+                    href="cv/cv-martin-fernandez.pdf"
+                    download
+                  >
+                    <i class="bi bi-download" aria-hidden="true"></i>Descargar CV
+                  </a>
+                </div>
+                <ul class="panel-pie__redes">
+                  <li class="panel-pie__red">
+                    <a
+                      class="panel-pie__enlace"
+                      href="https://www.linkedin.com/in/martinfernandeez"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="LinkedIn de Martín Fernández"
+                      ><i class="bi bi-linkedin" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="panel-pie__red">
+                    <a
+                      class="panel-pie__enlace"
+                      href="https://github.com/martinfernandez06"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="GitHub de Martín Fernández"
+                      ><i class="bi bi-github" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="panel-pie__red">
+                    <a
+                      class="panel-pie__enlace"
+                      href="mailto:tinchodeev@gmail.com"
+                      aria-label="Enviar un correo a Martín Fernández"
+                      ><i class="bi bi-envelope" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+                <p class="panel-pie__texto">
+                  <span class="panel-pie__llave" aria-hidden="true">{</span>
+                  © 2026 Martín Fernández
+                  <span class="panel-pie__llave" aria-hidden="true">}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== INICIO ===== -->
+      <section id="inicio" class="seccion presentacion">
+        <div class="container presentacion__contenido">
+          <div class="presentacion__foto">
+            <span class="presentacion__llave" aria-hidden="true">{</span>
+            <img
+              class="presentacion__imagen"
+              src="img/Perfil.jpg"
+              alt="Foto de Martín Fernández"
+              width="280"
+              height="280"
+            />
+            <span class="presentacion__llave" aria-hidden="true">}</span>
+          </div>
+          <div class="presentacion__texto">
+            <h1>
+              Martín Fernández
+              <span class="presentacion__titulo">Desarrollador de Software · .NET</span>
+            </h1>
+            <p class="presentacion__frase">
+              Hola, mi nombre es Martín, pero la mayoría de mis amigos y
+              conocidos me dicen Tincho. Soy desarrollador full stack con .NET y
+              busco mi primera experiencia en una empresa de software.
+            </p>
+            <div class="presentacion__botones">
+              <a class="boton boton--primario" href="#proyectos"
+                >Ver proyectos</a
+              >
+              <a
+                class="boton boton--contorno"
+                href="cv/cv-martin-fernandez.pdf"
+                download
+              >
+                <i class="bi bi-download" aria-hidden="true"></i>Descargar CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SOBRE MI ===== -->
+      <section id="sobre-mi" class="seccion seccion--oscura">
+        <div class="container">
+          <h2 class="seccion__titulo">Sobre mí</h2>
+          <span class="seccion__linea"></span>
+          <div class="sobre-mi">
+            <div class="sobre-mi__texto">
+              <p>
+                Empecé con el desarrollo web en 2023, estudiando en Coderhouse.
+                Me gustó mucho trabajar con React y con eso hice algunas webs,
+                entre ellas e-commerce, y terminé entre los diez mejores de mi
+                comisión en los tres cursos. En 2025 empecé la universidad y ahí
+                aprendí la lógica, las bases de datos, los algoritmos, a
+                trabajar el back y a diseñar la arquitectura de un sistema.
+                Aprendí a pensar como programador y a resolver problemas reales
+                aplicando la lógica. Hoy trabajo con JavaScript, HTML, CSS y
+                React en el front, y con C#, .NET y SQL Server en el back, y
+                estoy sumando ASP.NET para el desarrollo web.
+              </p>
+              <p>
+                Más allá de programar, lo que más me gusta es armar sistemas de
+                gestión y e-commerce, y también crear APIs. Me gusta trabajar en
+                todas las partes, el front, el back, la base de datos y la
+                arquitectura. Cuando me asignan una tarea, la cumplo, y me gusta
+                ayudar a mis compañeros. Soy responsable y le dedico mucho
+                tiempo a lo que hago. Ahora busco trabajar en una empresa de
+                desarrollo de software, presencial o híbrido, para seguir
+                aprendiendo con un equipo.
+              </p>
+            </div>
+            <ul class="sobre-mi__datos">
+              <li class="sobre-mi__dato">
+                <i class="bi bi-geo-alt sobre-mi__icono" aria-hidden="true"></i>
+                <span class="sobre-mi__etiqueta">Ubicación</span>
+                <span class="sobre-mi__valor"
+                  >Tucumán, Argentina</span
+                >
+              </li>
+              <li class="sobre-mi__dato">
+                <i
+                  class="bi bi-translate sobre-mi__icono"
+                  aria-hidden="true"
+                ></i>
+                <span class="sobre-mi__etiqueta">Idiomas</span>
+                <span class="sobre-mi__valor"
+                  >Español (nativo) · Inglés (básico)</span
+                >
+              </li>
+              <li class="sobre-mi__dato">
+                <i
+                  class="bi bi-mortarboard sobre-mi__icono"
+                  aria-hidden="true"
+                ></i>
+                <span class="sobre-mi__etiqueta">Educación</span>
+                <span class="sobre-mi__valor"
+                  >Tecnicatura en Programación, UTN FRGP (en curso)</span
+                >
+              </li>
+              <li class="sobre-mi__dato">
+                <i
+                  class="bi bi-briefcase sobre-mi__icono"
+                  aria-hidden="true"
+                ></i>
+                <span class="sobre-mi__etiqueta">Buscando</span>
+                <span class="sobre-mi__valor"
+                  >Primer empleo IT · Presencial o híbrido</span
+                >
+              </li>
+            </ul>
+            <div class="sobre-mi__timeline">
+              <h3 class="sobre-mi__subtitulo">Trayectoria</h3>
+              <ol class="sobre-mi__etapas">
+                <li class="sobre-mi__etapa">
+                  <p class="sobre-mi__anio">2023 – 2024</p>
+                  <h4 class="sobre-mi__cargo">
+                    Desarrollo Web FrontEnd React js · Coderhouse
+                  </h4>
+                  <p class="sobre-mi__detalle">
+                    Desarrollo Web, JavaScript y React. Top 10 en las 3
+                    comisiones.
+                  </p>
+                </li>
+                <li class="sobre-mi__etapa">
+                  <p class="sobre-mi__anio">2025 – hoy</p>
+                  <h4 class="sobre-mi__cargo">
+                    Tecnicatura Universitaria en Programación · UTN FRGP
+                  </h4>
+                  <p class="sobre-mi__detalle">
+                    Lógica de programación, C++, C# y .NET con WinForms, y SQL
+                    Server.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONOCIMIENTOS ===== -->
+      <section id="skills" class="seccion">
+        <div class="container">
+          <h2 class="seccion__titulo">Skills</h2>
+          <span class="seccion__linea"></span>
+          <div class="conocimientos">
+            <div class="conocimientos__grupo">
+              <h3 class="conocimientos__titulo">Lenguajes</h3>
+              <ul class="conocimientos__lista">
+                <li class="mosaico">
+                  <i
+                    class="devicon-csharp-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">C#</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-cplusplus-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">C++</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-javascript-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">JavaScript</span>
+                </li>
+                <li class="mosaico">
+                  <i class="bi bi-database mosaico__icono" aria-hidden="true"></i>
+                  <span class="mosaico__nombre">SQL</span>
+                </li>
+              </ul>
+            </div>
+            <div class="conocimientos__grupo">
+              <h3 class="conocimientos__titulo">Frameworks y tecnologías</h3>
+              <ul class="conocimientos__lista">
+                <li class="mosaico">
+                  <i
+                    class="devicon-dot-net-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">.NET</span>
+                </li>
+                <li class="mosaico">
+                  <i class="bi bi-window mosaico__icono" aria-hidden="true"></i>
+                  <span class="mosaico__nombre">WinForms</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-react-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">React</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-bootstrap-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">Bootstrap</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-html5-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">HTML</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-css3-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">CSS</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-sass-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">Sass</span>
+                </li>
+              </ul>
+            </div>
+            <div class="conocimientos__grupo">
+              <h3 class="conocimientos__titulo">Bases de datos</h3>
+              <ul class="conocimientos__lista">
+                <li class="mosaico">
+                  <i class="bi bi-server mosaico__icono" aria-hidden="true"></i>
+                  <span class="mosaico__nombre">SQL Server</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-firebase-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">Firebase</span>
+                </li>
+              </ul>
+            </div>
+            <div class="conocimientos__grupo">
+              <h3 class="conocimientos__titulo">Herramientas</h3>
+              <ul class="conocimientos__lista">
+                <li class="mosaico">
+                  <i
+                    class="devicon-git-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">Git</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-github-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">GitHub</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-visualstudio-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">Visual Studio</span>
+                </li>
+                <li class="mosaico">
+                  <i
+                    class="devicon-vscode-plain mosaico__icono"
+                    aria-hidden="true"
+                  ></i>
+                  <span class="mosaico__nombre">VS Code</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CERTIFICADOS ===== -->
+      <section id="certificados" class="seccion seccion--oscura">
+        <div class="container">
+          <h2 class="seccion__titulo">Certificados</h2>
+          <span class="seccion__linea"></span>
+          <ul class="galeria">
+            <li class="galeria__item tarjeta tarjeta--certificado">
+              <img
+                class="tarjeta__imagen"
+                src="img/Desarrollo-Web.png"
+                alt="Certificado de Desarrollo Web de Coderhouse"
+                width="3240"
+                height="2100"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">Desarrollo Web</h3>
+                <p class="tarjeta__meta">Coderhouse · 2023</p>
+                <div class="tarjeta__acciones">
+                  <button
+                    class="boton boton--primario"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificado-desarrollo-web"
+                  >
+                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Ver certificado<span class="visually-hidden"> de Desarrollo Web</span
+                  ></button>
+                  <button
+                    class="boton boton--contorno boton--claro"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#temario-desarrollo-web"
+                  >
+                    <i class="bi bi-list-check" aria-hidden="true"></i>Temario<span class="visually-hidden"> de Desarrollo Web</span
+                  ></button>
+                </div>
+              </div>
+            </li>
+            <li class="galeria__item tarjeta tarjeta--certificado">
+              <img
+                class="tarjeta__imagen"
+                src="img/JavaScript.png"
+                alt="Certificado de JavaScript de Coderhouse"
+                width="3240"
+                height="2100"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">JavaScript</h3>
+                <p class="tarjeta__meta">Coderhouse · 2024</p>
+                <div class="tarjeta__acciones">
+                  <button
+                    class="boton boton--primario"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificado-javascript"
+                  >
+                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Ver certificado<span class="visually-hidden"> de JavaScript</span
+                  ></button>
+                  <button
+                    class="boton boton--contorno boton--claro"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#temario-javascript"
+                  >
+                    <i class="bi bi-list-check" aria-hidden="true"></i>Temario<span class="visually-hidden"> de JavaScript</span
+                  ></button>
+                </div>
+              </div>
+            </li>
+            <li class="galeria__item tarjeta tarjeta--certificado">
+              <img
+                class="tarjeta__imagen"
+                src="img/ReactJs.png"
+                alt="Certificado de React de Coderhouse"
+                width="3240"
+                height="2100"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">React js</h3>
+                <p class="tarjeta__meta">Coderhouse · 2024</p>
+                <div class="tarjeta__acciones">
+                  <button
+                    class="boton boton--primario"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificado-react"
+                  >
+                    <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>Ver certificado<span class="visually-hidden"> de React js</span
+                  ></button>
+                  <button
+                    class="boton boton--contorno boton--claro"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#temario-react"
+                  >
+                    <i class="bi bi-list-check" aria-hidden="true"></i>Temario<span class="visually-hidden"> de React js</span
+                  ></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="modal fade certificado"
+            id="certificado-desarrollo-web"
+            tabindex="-1"
+            aria-labelledby="certificado-desarrollo-web-titulo"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2
+                    class="modal-title certificado__titulo"
+                    id="certificado-desarrollo-web-titulo"
+                  >
+                    Desarrollo Web
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="certificado__imagen"
+                    src="img/Desarrollo-Web.png"
+                    alt="Certificado de Desarrollo Web de Coderhouse"
+                    width="3240"
+                    height="2100"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade certificado"
+            id="certificado-javascript"
+            tabindex="-1"
+            aria-labelledby="certificado-javascript-titulo"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2
+                    class="modal-title certificado__titulo"
+                    id="certificado-javascript-titulo"
+                  >
+                    JavaScript
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="certificado__imagen"
+                    src="img/JavaScript.png"
+                    alt="Certificado de JavaScript de Coderhouse"
+                    width="3240"
+                    height="2100"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade certificado"
+            id="certificado-react"
+            tabindex="-1"
+            aria-labelledby="certificado-react-titulo"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2
+                    class="modal-title certificado__titulo"
+                    id="certificado-react-titulo"
+                  >
+                    React js
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    class="certificado__imagen"
+                    src="img/ReactJs.png"
+                    alt="Certificado de React de Coderhouse"
+                    width="3240"
+                    height="2100"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade temario"
+            id="temario-desarrollo-web"
+            tabindex="-1"
+            aria-labelledby="temario-desarrollo-web-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title temario__titulo" id="temario-desarrollo-web-titulo">
+                    Qué aprendí en Desarrollo Web
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="temario__meta">Coderhouse · 2023</p>
+                  <ul class="temario__lista">
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Prototipado: wireframes y mockups
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      HTML semántico
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      CSS y modelo de caja
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Flexbox
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      CSS Grid
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Pseudoclases y metodología BEM
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Bootstrap y diseño responsive
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Git y GitHub
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Sass: variables, anidación, mixins, bucles y maps
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Transformaciones, transiciones y animaciones
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      SEO y buenas prácticas
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade temario"
+            id="temario-javascript"
+            tabindex="-1"
+            aria-labelledby="temario-javascript-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title temario__titulo" id="temario-javascript-titulo">
+                    Qué aprendí en JavaScript
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="temario__meta">Coderhouse · 2024</p>
+                  <ul class="temario__lista">
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Sintaxis y variables
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Control de flujo y ciclos
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Funciones
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Objetos y arrays
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Funciones de orden superior
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      DOM y eventos
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Storage y JSON
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Operadores avanzados
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Librerías
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Asincronía y promesas
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Ajax y Fetch
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Frameworks y Node.js
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade temario"
+            id="temario-react"
+            tabindex="-1"
+            aria-labelledby="temario-react-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title temario__titulo" id="temario-react-titulo">
+                    Qué aprendí en React js
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="temario__meta">Coderhouse · 2024</p>
+                  <ul class="temario__lista">
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Introducción a React y configuración del entorno
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      JSX y transpiling
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Componentes
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Promesas, asincronía y map
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Consumo de APIs
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Hooks, children y patrones
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Routing y navegación
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Eventos
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Context
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Técnicas de rendering
+                    </li>
+                    <li class="temario__tema">
+                      <i class="bi bi-check2 temario__icono" aria-hidden="true"></i>
+                      Firebase
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROYECTOS ===== -->
+      <section id="proyectos" class="seccion">
+        <div class="container">
+          <h2 class="seccion__titulo">Proyectos</h2>
+          <span class="seccion__linea"></span>
+          <ul class="galeria">
+                        <li class="galeria__item tarjeta tarjeta--proyecto">
+              <img
+                class="tarjeta__imagen"
+                src="img/TpWinforms.png"
+                alt="Captura del proyecto WinForms"
+                width="1913"
+                height="1029"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">Proyecto WinForms</h3>
+                <p class="tarjeta__descripcion recorte-3">
+                  Catálogo en C# con WinForms y SQL Server. Trabajo en equipo de
+                  Programación III.
+                </p>
+                <div class="tarjeta__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Proyecto WinForms</span
+                  ></a>
+                </div>
+              </div>
+            </li>
+            <li class="galeria__item tarjeta tarjeta--proyecto">
+              <img
+                class="tarjeta__imagen"
+                src="img/Neovape.png"
+                alt="Captura del proyecto NeoVape"
+                width="1883"
+                height="907"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">NeoVape</h3>
+                <p class="tarjeta__descripcion recorte-3">
+                  Tienda online en React y Firebase: catálogo, carrito, cuentas
+                  y comprobante PDF.
+                </p>
+                <button
+                  class="tarjeta__detalles"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ficha-neovape"
+                >
+                  Ver detalles<span class="visually-hidden"> de NeoVape</span
+                  ><i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+                <div class="tarjeta__acciones">
+                  <a
+                    class="boton boton--primario"
+                    href="https://neovape.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>Ver demo<span class="visually-hidden"> de NeoVape</span
+                  ></a>
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/NeoVape"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de NeoVape</span
+                  ></a>
+                </div>
+              </div>
+            </li>
+            <li class="galeria__item tarjeta tarjeta--proyecto">
+              <img
+                class="tarjeta__imagen"
+                src="img/banner-academia-ninja.png"
+                alt="Captura del proyecto Academia Ninja"
+                width="1915"
+                height="821"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">Academia Ninja</h3>
+                <p class="tarjeta__descripcion recorte-3">
+                  Base de datos SQL Server con temática Naruto: vistas,
+                  procedimientos y triggers.
+                </p>
+                <button
+                  class="tarjeta__detalles"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ficha-academia-ninja"
+                >
+                  Ver detalles<span class="visually-hidden"> de Academia Ninja</span
+                  ><i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+                <div class="tarjeta__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/Academia_Ninja"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Academia Ninja</span
+                  ></a>
+                </div>
+              </div>
+            </li>
+            <li class="galeria__item tarjeta tarjeta--proyecto">
+              <img
+                class="tarjeta__imagen"
+                src="img/Placeholder_Image.webp"
+                alt="Vista previa pendiente de Enfrendados"
+                width="1920"
+                height="1080"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">Enfrendados</h3>
+                <p class="tarjeta__descripcion recorte-3">
+                  Juego de dados en C++ para dos jugadores por consola. Proyecto
+                  grupal de la UTN.
+                </p>
+                <button
+                  class="tarjeta__detalles"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ficha-enfrendados"
+                >
+                  Ver detalles<span class="visually-hidden"> de Enfrendados</span
+                  ><i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+                <div class="tarjeta__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/Enfrendados_grupo_12"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Enfrendados</span
+                  ></a>
+                </div>
+              </div>
+            </li>
+            <li class="galeria__item tarjeta tarjeta--proyecto">
+              <img
+                class="tarjeta__imagen"
+                src="img/Placeholder_Image.webp"
+                alt="Vista previa pendiente de Sistema de Turnos para Barberías"
+                width="1920"
+                height="1080"
+                loading="lazy"
+              />
+              <div class="tarjeta__cuerpo">
+                <h3 class="tarjeta__titulo recorte-2">
+                  Sistema de Turnos para Barberías
+                </h3>
+                <p class="tarjeta__descripcion recorte-3">
+                  Gestión de turnos, pagos e informes de una barbería. En C++,
+                  con POO y archivos.
+                </p>
+                <button
+                  class="tarjeta__detalles"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ficha-barberia"
+                >
+                  Ver detalles<span class="visually-hidden"> de Sistema de Turnos para Barberías</span
+                  ><i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+                <div class="tarjeta__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/Sistema_Gestion_Barberia"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Sistema de Turnos para Barberías</span
+                  ></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="modal fade ficha"
+            id="ficha-neovape"
+            tabindex="-1"
+            aria-labelledby="ficha-neovape-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title ficha__titulo" id="ficha-neovape-titulo">
+                    NeoVape
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="ficha__meta">Proyecto final de Coderhouse · 2024 · Top 10 de la comisión</p>
+                  <p class="ficha__texto">
+                    Tienda online de vaporizadores hecha con React. No tiene backend propio el sitio se conecta directo con Firebase para las cuentas y los datos. En 2026 lo revisé entero: checkout transaccional, acceso a datos separado de la interfaz y linter sin errores.
+                  </p>
+                  <h3 class="ficha__subtitulo">Qué hace</h3>
+                  <ul class="ficha__lista">
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Catálogo con filtro por categoría y detalle de producto con reseñas.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Carrito que se mantiene al recargar la página y revalida el stock.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Registro, inicio de sesión y rutas protegidas.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Checkout que valida el stock y genera la orden en una sola transacción, con comprobante en PDF.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Modo claro y oscuro, y diseño responsive.
+                    </li>
+                  </ul>
+                  <h3 class="ficha__subtitulo">Tecnologías</h3>
+                  <ul class="ficha__tecnologias">
+                    <li class="ficha__tecnologia">React 18</li>
+                    <li class="ficha__tecnologia">Vite</li>
+                    <li class="ficha__tecnologia">React Router</li>
+                    <li class="ficha__tecnologia">Context API</li>
+                    <li class="ficha__tecnologia">Firebase Auth</li>
+                    <li class="ficha__tecnologia">Firestore</li>
+                    <li class="ficha__tecnologia">Bootstrap</li>
+                    <li class="ficha__tecnologia">React-Bootstrap</li>
+                    <li class="ficha__tecnologia">jsPDF</li>
+                    <li class="ficha__tecnologia">DOMPurify</li>
+                    <li class="ficha__tecnologia">Vercel</li>
+                  </ul>
+                </div>
+                <div class="modal-footer ficha__acciones">
+                  <a
+                    class="boton boton--primario"
+                    href="https://neovape.vercel.app/"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>Ver demo<span class="visually-hidden"> de NeoVape</span
+                  ></a>
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/NeoVape"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de NeoVape</span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade ficha"
+            id="ficha-academia-ninja"
+            tabindex="-1"
+            aria-labelledby="ficha-academia-ninja-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title ficha__titulo" id="ficha-academia-ninja-titulo">
+                    Academia Ninja
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="ficha__meta">Trabajo integrador · Base de Datos II · UTN FRGP</p>
+                  <p class="ficha__texto">
+                    Base de datos completa con temática de Naruto para gestionar una academia ninja personajes, aldeas, rangos, equipos con sensei, misiones por dificultad y técnicas. La lógica importante vive dentro del motor, en vistas, procedimientos y triggers.
+                  </p>
+                  <h3 class="ficha__subtitulo">Qué hace</h3>
+                  <ul class="ficha__lista">
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      13 tablas normalizadas hasta tercera forma normal, con claves foráneas y restricciones.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      6 vistas con JOIN, LEFT JOIN y agregaciones con GROUP BY.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      3 procedimientos almacenados con transacciones y manejo de errores.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      4 triggers de auditoría y validación, incluido uno que reemplaza el borrado por una baja lógica.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Reglas de negocio, como que el sensei sea Jonin o superior y que un equipo no tenga dos misiones en curso.
+                    </li>
+                  </ul>
+                  <h3 class="ficha__subtitulo">Tecnologías</h3>
+                  <ul class="ficha__tecnologias">
+                    <li class="ficha__tecnologia">SQL Server 2022</li>
+                    <li class="ficha__tecnologia">T-SQL</li>
+                    <li class="ficha__tecnologia">SSMS</li>
+                  </ul>
+                </div>
+                <div class="modal-footer ficha__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/Academia_Ninja"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Academia Ninja</span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade ficha"
+            id="ficha-enfrendados"
+            tabindex="-1"
+            aria-labelledby="ficha-enfrendados-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title ficha__titulo" id="ficha-enfrendados-titulo">
+                    Enfrendados
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="ficha__meta">Trabajo grupal · Programación I · UTN FRGP · 2025</p>
+                  <p class="ficha__texto">
+                    Juego de dados por consola para dos jugadores. En cada turno sale un número objetivo y hay que elegir dados cuya suma dé exacto si acertás, sumás puntos y le pasás esos dados al rival; si no, el rival te pasa uno de los suyos. Gana quien junte más puntos en 3 rondas.
+                  </p>
+                  <h3 class="ficha__subtitulo">Qué hace</h3>
+                  <ul class="ficha__lista">
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Menú con partida de dos jugadores, estadísticas, créditos y salida con confirmación.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Sorteo inicial para decidir quién arranca.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Objetivo de cada turno con dos dados de 12 caras.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Puntaje según dados usados × objetivo, con bonus por quedarse sin dados.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Código separado en módulos: interfaz de usuario y lógica del juego.
+                    </li>
+                  </ul>
+                  <h3 class="ficha__subtitulo">Tecnologías</h3>
+                  <ul class="ficha__tecnologias">
+                    <li class="ficha__tecnologia">C++</li>
+                    <li class="ficha__tecnologia">g++</li>
+                    <li class="ficha__tecnologia">rlutil</li>
+                  </ul>
+                </div>
+                <div class="modal-footer ficha__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/Enfrendados_grupo_12"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Enfrendados</span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade ficha"
+            id="ficha-barberia"
+            tabindex="-1"
+            aria-labelledby="ficha-barberia-titulo"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title ficha__titulo" id="ficha-barberia-titulo">
+                    Sistema de Turnos para Barberías
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p class="ficha__meta">Proyecto integrador · Programación II · UTN FRGP · Líder del proyecto</p>
+                  <p class="ficha__texto">
+                    Sistema de consola que gestiona la operación diaria de una barbería clientes, barberos, servicios, turnos, pagos e informes. Hecho en C++ desde cero, con los datos guardados en archivos binarios para que no se pierdan al cerrar.
+                  </p>
+                  <h3 class="ficha__subtitulo">Qué hace</h3>
+                  <ul class="ficha__lista">
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Alta, baja y modificación de clientes (que acumulan puntos), barberos y servicios.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Turnos que solo se crean si el cliente, el barbero y el servicio existen y están activos.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Registro de pagos, con listado de los turnos que quedaron sin pagar.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      Informes de recaudación, servicios más pedidos, turnos por barbero y clientes frecuentes.
+                    </li>
+                    <li class="ficha__item">
+                      <i class="bi bi-check2 ficha__icono" aria-hidden="true"></i>
+                      POO con herencia, composición y encapsulamiento, memoria dinámica y baja lógica.
+                    </li>
+                  </ul>
+                  <h3 class="ficha__subtitulo">Tecnologías</h3>
+                  <ul class="ficha__tecnologias">
+                    <li class="ficha__tecnologia">C++</li>
+                    <li class="ficha__tecnologia">POO</li>
+                    <li class="ficha__tecnologia">Archivos binarios</li>
+                    <li class="ficha__tecnologia">Code::Blocks</li>
+                    <li class="ficha__tecnologia">GNU GCC</li>
+                    <li class="ficha__tecnologia">rlutil</li>
+                  </ul>
+                </div>
+                <div class="modal-footer ficha__acciones">
+                  <a
+                    class="boton boton--contorno"
+                    href="https://github.com/AugustoMartinFernandez/Sistema_Gestion_Barberia"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="bi bi-github" aria-hidden="true"></i>Ver código<span class="visually-hidden"> de Sistema de Turnos para Barberías</span
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== REDES ===== -->
+      <section id="redes" class="seccion seccion--oscura">
+        <div class="container">
+          <h2 class="seccion__titulo">Redes</h2>
+          <span class="seccion__linea"></span>
+          <ul class="redes">
+            <li>
+              <a
+                class="redes__tarjeta"
+                href="https://www.linkedin.com/in/martinfernandeez"
+                target="_blank"
+                rel="noopener"
+              >
+                <i
+                  class="bi bi-linkedin redes__icono redes__icono--linkedin"
+                  aria-hidden="true"
+                ></i>
+                <span class="redes__datos">
+                  <span class="redes__nombre">LinkedIn</span>
+                  <span class="redes__usuario">in/martinfernandeez</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="redes__tarjeta"
+                href="https://github.com/martinfernandez06"
+                target="_blank"
+                rel="noopener"
+              >
+                <i
+                  class="bi bi-github redes__icono redes__icono--github"
+                  aria-hidden="true"
+                ></i>
+                <span class="redes__datos">
+                  <span class="redes__nombre">GitHub</span>
+                  <span class="redes__usuario">@martinfernandez06</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="redes__tarjeta" href="mailto:tinchodeev@gmail.com">
+                <i
+                  class="bi bi-envelope redes__icono redes__icono--email"
+                  aria-hidden="true"
+                ></i>
+                <span class="redes__datos">
+                  <span class="redes__nombre">Email</span>
+                  <span class="redes__usuario">tinchodeev@gmail.com</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== CONTACTO ===== -->
+      <section id="contacto" class="seccion contacto">
+        <div class="container">
+          <h2 class="seccion__titulo">Contacto</h2>
+          <span class="seccion__linea"></span>
+          <form class="formulario" id="form">
+            <div class="formulario__campo">
+              <label class="formulario__etiqueta" for="name">Nombre</label>
+              <input
+                class="formulario__control"
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                minlength="3"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="formulario__campo">
+              <label class="formulario__etiqueta" for="email">Email</label>
+              <input
+                class="formulario__control"
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                maxlength="100"
+                pattern="[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}"
+                title="Un email válido, por ejemplo nombre@correo.com"
+                required
+              />
+            </div>
+            <div class="formulario__campo">
+              <label class="formulario__etiqueta" for="telefono"
+                >Teléfono
+                <span class="formulario__opcional">(opcional)</span></label
+              >
+              <input
+                class="formulario__control"
+                type="tel"
+                id="telefono"
+                name="telefono"
+                autocomplete="tel"
+                maxlength="15"
+                pattern="[0-9]{8,15}"
+                title="Solo números, entre 8 y 15 dígitos, sin espacios ni guiones"
+                placeholder="Ej: 3811234567"
+              />
+            </div>
+            <div class="formulario__campo">
+              <label class="formulario__etiqueta" for="asunto">Asunto</label>
+              <input
+                class="formulario__control"
+                type="text"
+                id="asunto"
+                name="asunto"
+                minlength="3"
+                maxlength="80"
+                required
+              />
+            </div>
+            <div class="formulario__campo formulario__campo--ancho">
+              <label class="formulario__etiqueta" for="message">Mensaje</label>
+              <textarea
+                class="formulario__control formulario__control--area"
+                id="message"
+                name="message"
+                rows="5"
+                minlength="10"
+                maxlength="1000"
+                required
+              ></textarea>
+            </div>
+            <input
+              class="boton boton--primario boton--ancho formulario__boton"
+              type="submit"
+              id="button"
+              value="Enviar"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="pie">
+      <div class="container">
+        <ul class="pie__redes">
+          <li>
+            <a
+              class="pie__enlace"
+              href="https://www.linkedin.com/in/martinfernandeez"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn de Martín Fernández"
+              ><i class="bi bi-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="pie__enlace"
+              href="https://github.com/martinfernandez06"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub de Martín Fernández"
+              ><i class="bi bi-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="pie__enlace"
+              href="mailto:tinchodeev@gmail.com"
+              aria-label="Enviar un correo a Martín Fernández"
+              ><i class="bi bi-envelope" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="pie__texto">
+          <span class="pie__llave" aria-hidden="true">{</span>
+          © 2026 Martín Fernández
+          <span class="pie__llave" aria-hidden="true">}</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

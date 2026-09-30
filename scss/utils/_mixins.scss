@@ -1,0 +1,40 @@
+// ===== MIXINS =====
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin escritorio {
+  @media (min-width: $bp-escritorio) {
+    @content;
+  }
+}
+
+@mixin en-oscura {
+  .seccion--oscura & {
+    @content;
+  }
+}
+
+@mixin recuadro-oscuro {
+  color: var(--color-fondo);
+  background-color: var(--color-superficie-oscura);
+  border: 1px solid var(--color-borde-oscuro);
+}
+
+@mixin hover-oscuro {
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-borde-oscuro-hover);
+      box-shadow: var(--sombra-tarjeta-oscura);
+    }
+  }
+
+  @media (hover: hover) and (prefers-reduced-motion: reduce) {
+    &:hover {
+      transform: none;
+    }
+  }
+}

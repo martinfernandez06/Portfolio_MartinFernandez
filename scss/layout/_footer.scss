@@ -1,0 +1,42 @@
+// ===== FOOTER =====
+.pie {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  background-color: var(--color-texto);
+
+  @include escritorio {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.pie__redes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.pie__enlace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.25rem;
+  color: var(--color-fondo);
+
+  &:hover {
+    color: var(--color-primario-claro);
+  }
+}
+
+.pie__texto {
+  font-size: 0.875rem;
+  color: var(--color-texto-oscuro-suave);
+}
+
+.pie__llave {
+  font-family: var(--fuente-mono);
+  color: var(--color-primario-claro);
+}

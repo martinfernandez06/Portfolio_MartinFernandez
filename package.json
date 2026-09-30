@@ -1,0 +1,16 @@
+{
+  "name": "mi-portafolio",
+  "version": "1.0.0",
+  "description": "Portfolio personal de Martín Fernández, desarrollador de software .NET.",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "sass scss/styles.scss css/styles.css --no-source-map --silence-deprecation=import",
+    "watch:css": "sass --watch scss/styles.scss css/styles.css --no-source-map --silence-deprecation=import"
+  },
+  "keywords": [],
+  "author": "Martín Fernández",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.105.0"
+  }
+}

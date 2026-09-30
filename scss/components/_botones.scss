@@ -1,0 +1,76 @@
+// ===== BOTONES =====
+.boton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 1rem;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+  border: 0;
+  border-radius: $radio;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.boton--primario {
+  background-color: var(--color-primario);
+  color: var(--color-fondo);
+
+  &:hover {
+    background-color: var(--color-primario-hover);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(81, 43, 212, 0.35);
+    }
+  }
+
+  @media (hover: hover) and (prefers-reduced-motion: reduce) {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.boton--contorno {
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-texto);
+  color: var(--color-texto);
+
+  &:hover {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+
+  @media (hover: hover) and (prefers-reduced-motion: reduce) {
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.boton--claro {
+  background-color: transparent;
+  border-color: var(--color-fondo);
+  color: var(--color-fondo);
+
+  &:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+  }
+}
+
+.boton--ancho {
+  width: 100%;
+}

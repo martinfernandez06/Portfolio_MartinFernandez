@@ -1,0 +1,52 @@
+// ===== SECCION =====
+.seccion {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include tablet {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @include escritorio {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.seccion--oscura {
+  --color-foco: var(--color-primario-claro);
+
+  color: var(--color-fondo);
+  background-color: var(--color-texto);
+}
+
+.seccion__titulo {
+  color: var(--color-texto);
+
+  @include en-oscura {
+    color: var(--color-fondo);
+  }
+}
+
+.seccion__linea {
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--color-primario);
+
+  @include tablet {
+    margin-bottom: 2rem;
+  }
+
+  @include escritorio {
+    width: 56px;
+    margin-bottom: 2.5rem;
+  }
+
+  @include en-oscura {
+    background-color: var(--color-primario-claro);
+  }
+}

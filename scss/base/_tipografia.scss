@@ -1,0 +1,79 @@
+// ===== TIPOGRAFIA =====
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
+
+  @include escritorio {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @include tablet {
+    font-size: 1.75rem;
+  }
+
+  @include escritorio {
+    font-size: 2rem;
+  }
+}
+
+h3 {
+  font-size: 1.125rem;
+
+  @include tablet {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+}
+
+p a {
+  color: var(--color-secundario);
+  text-decoration: underline;
+
+  @include en-oscura {
+    color: var(--color-primario-claro);
+  }
+}
+
+.texto-chico {
+  font-size: 0.875rem;
+}
+
+.texto-descripcion {
+  font-size: 0.9375rem;
+  color: var(--color-texto-suave);
+}
+
+.recorte-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.recorte-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}

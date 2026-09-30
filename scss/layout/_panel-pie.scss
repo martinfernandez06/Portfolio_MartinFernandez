@@ -1,0 +1,97 @@
+// ===== PANEL PIE =====
+.panel-pie {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: auto;
+  padding: 1rem;
+  border-top: 1px solid var(--color-borde-oscuro);
+
+  @include escritorio {
+    display: none;
+  }
+}
+
+.panel-pie__cv,
+.panel-pie__redes,
+.panel-pie__texto {
+  opacity: 0;
+  transform: translateX(1rem);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.panel-pie__redes {
+  display: flex;
+  gap: 0.75rem;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.panel-pie__red {
+  flex: 1;
+}
+
+.panel-pie__enlace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.25rem;
+  color: var(--color-fondo);
+  border: 1px solid var(--color-borde-oscuro-hover);
+
+  &:hover {
+    color: var(--color-primario-claro);
+    border-color: var(--color-primario-claro);
+  }
+}
+
+.panel-pie__texto {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: var(--color-texto-oscuro-suave);
+  text-align: center;
+}
+
+.panel-pie__llave {
+  font-family: var(--fuente-mono);
+  color: var(--color-primario-claro);
+}
+
+.offcanvas.show {
+  .panel-pie__cv,
+  .panel-pie__redes,
+  .panel-pie__texto {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@for $i from 1 through 3 {
+  .offcanvas.show .panel-pie > :nth-child(#{$i}) {
+    transition-delay: 40ms * (7 + $i);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panel-pie__cv,
+  .panel-pie__redes,
+  .panel-pie__texto {
+    transform: none;
+  }
+
+  .offcanvas.show {
+    .panel-pie__cv,
+    .panel-pie__redes,
+    .panel-pie__texto {
+      transform: none;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .offcanvas.show .panel-pie > :nth-child(#{$i}) {
+      transition-delay: 0s;
+    }
+  }
+}

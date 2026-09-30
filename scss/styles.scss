@@ -1,0 +1,29 @@
+// ===== UTILS =====
+@import "utils/variables";
+@import "utils/mixins";
+
+// ===== BASE =====
+@import "base/reset";
+@import "base/tipografia";
+
+// ===== LAYOUT =====
+@import "layout/seccion";
+@import "layout/navbar";
+@import "layout/panel-pie";
+@import "layout/footer";
+
+// ===== COMPONENTS =====
+@import "components/botones";
+@import "components/tarjeta";
+@import "components/galeria";
+@import "components/mosaico";
+@import "components/formulario";
+
+// ===== SECTIONS =====
+@import "sections/inicio";
+@import "sections/sobre-mi";
+@import "sections/conocimientos";
+@import "sections/certificados";
+@import "sections/proyectos";
+@import "sections/redes";
+@import "sections/contacto";

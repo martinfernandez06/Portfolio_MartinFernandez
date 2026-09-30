@@ -1,0 +1,89 @@
+// ===== REDES =====
+$colores-redes: (
+  linkedin: var(--color-linkedin),
+  github: var(--color-fondo),
+  email: var(--color-primario)
+);
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 0;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+.redes__tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  padding: 1rem 1.25rem;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: $radio;
+
+  @include tablet {
+    min-width: 11.5rem;
+  }
+
+  &:hover {
+    border-color: var(--color-primario);
+  }
+
+  @media (hover: hover) {
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+
+  @include en-oscura {
+    @include recuadro-oscuro;
+    @include hover-oscuro;
+  }
+}
+
+.redes__datos {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes__icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-fondo);
+}
+
+@each $red, $color in $colores-redes {
+  .redes__icono--#{$red} {
+    background-color: $color;
+  }
+}
+
+.redes__icono--github {
+  color: var(--color-texto);
+}
+
+.redes__nombre {
+  font-weight: 400;
+}
+
+.redes__usuario {
+  font-size: 0.8125rem;
+  color: var(--color-texto-suave);
+
+  @include en-oscura {
+    color: var(--color-texto-oscuro-suave);
+  }
+}
